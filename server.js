@@ -28,6 +28,7 @@ router.render = (req, res) => {
 			time_end: event.timeEnd,
 			address: event.address,
 			image_url: event.imageUrl,
+			event_operator_name: event.eventOperatorName,
 		}));
 	}
 	res.jsonp(data);
