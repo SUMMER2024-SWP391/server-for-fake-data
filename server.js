@@ -18,7 +18,7 @@ router.render = (req, res) => {
 		(originalUrl === "/events" || /^\/events\?.*$/.test(originalUrl))
 	) {
 		data = data.map((event) => ({
-			id: event.eventId,
+			id: event.id,
 			capaciy: event.capacity,
 			event_name: event.eventName,
 			ticket: event.ticket,
